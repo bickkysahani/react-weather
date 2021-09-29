@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 const api = {
-  key: " your open weather api key",
+  key: "api key",
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
@@ -17,6 +17,20 @@ function App() {
           setQuery('');
           console.log(result);
         });
+
+        // const getWeather = async () => {
+        //   try {
+        //   let res = await fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`);
+        //   let { result } = res.json();
+        //   setWeather(result);
+        //   setQuery('');
+        //   console.log(result);
+        //   } catch (error) {
+        //   console.error(error);
+        //   }
+        //   };
+        //   getWeather();
+          
     }
   }
 
